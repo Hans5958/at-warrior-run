@@ -11,5 +11,5 @@ jobs:
       - name: Build README.md
         id: build
         run: |
-          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 1 Hans5958
+          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 8 Hans5958
         timeout-minutes: 60
