@@ -1,0 +1,15 @@
+name: Run
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build README.md
+        id: build
+        run: |
+          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 20 Hans5958
+        timeout-minutes: 60
