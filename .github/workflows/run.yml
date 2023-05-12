@@ -8,8 +8,7 @@ jobs:
     name: Run
     runs-on: ubuntu-latest
     steps:
-      - name: Build README.md
-        id: build
+      - name: Run
         run: |
-          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 8 Hans5958
+          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 4 Hans5958
         timeout-minutes: 60
