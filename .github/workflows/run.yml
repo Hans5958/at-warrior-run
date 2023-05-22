@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Run
         run: |
-          docker run atdr.meo.ws/archiveteam/imgur-grab --concurrent 1 Hans5958
+          docker run atdr.meo.ws/archiveteam/urls-grab --concurrent 4 Hans5958
         timeout-minutes: 60
         continue-on-error: true
